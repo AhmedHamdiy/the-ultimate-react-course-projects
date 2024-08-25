@@ -1,16 +1,15 @@
+import React from "react";
 import Friend from "./Friend";
 import AddFriendModal from "./AddFriendModal";
-export function FriendsList(friends, onAddFriend, onPayment) {
-  let showAddFriendModal = false;
+export default function FriendsList({ friends, onAddFriend, onPayment }) {
   return (
     <div className="friendlist-container">
-      <ul class="friendlist">
-        {friends.map((friend, key) => (
-          <Friend onPayement={onPayment} friend={friend} key={friend.name} />
+      <ul className={`friendlist ${friends.length > 4 ? "scrollable" : ""}`}>
+        {friends.map((friend) => (
+          <Friend onPayement={onPayment} friend={friend} key={friend.id} />
         ))}
       </ul>
-      {showAddFriendModal ? <AddFriendModal onAddFriend={onAddFriend} /> : null}
-      <button onClick={() => (showAddFriendModal = true)}>Add Friend</button>
+      <AddFriendModal AddFriend={onAddFriend} />
     </div>
   );
 }

@@ -1,23 +1,30 @@
-export default function Friend(onPayement, friend) {
-  const isDebt = friend.owes > 0;
+import React from "react";
+
+export default function Friend({ onPayement, friend }) {
   return (
     <li className="friend-card">
-      <img src={friend.imgUrl} alt={friend.name} className="friend-img" />
-      <h1 className="friend-name">{friend.name}</h1>
-      {friend.owes > 0 ? (
-        <p className="money" style={{ color: "#45F745" }}>
-          {friend.name} owes you {friend.owes}$
-        </p>
-      ) : friend.owes < 0 ? (
-        <p className="money" style={{ color: "#F74545" }}>
-          you owe {friend.name} {Math.abs(friend.owes)}$
-        </p>
-      ) : (
-        <p className="money" style={{ color: "#CCCCCC" }}>
-          you and owe {friend.name} are Even.
-        </p>
-      )}
-      <button onClick={() => onPayement(friend.name)}>Select</button>
+      <div className="friend-details">
+        <img src={friend.imgUrl} alt={friend.name} className="friend-img" />
+        <h4 className="friend-name">{friend.name}</h4>
+      </div>
+      <div className="friend-details">
+        {friend.balance > 0 ? (
+          <p className="money" style={{ color: "#45F745" }}>
+            {friend.name} owes you {friend.balance}$
+          </p>
+        ) : friend.balance < 0 ? (
+          <p className="money" style={{ color: "#c7253e" }}>
+            you owe {friend.name} {Math.abs(friend.balance)}$
+          </p>
+        ) : (
+          <p className="money" style={{ color: "#CCCCCC" }}>
+            you and {friend.name} are Even.
+          </p>
+        )}
+      </div>
+      <button className="btn split" onClick={() => onPayement(friend)}>
+        Select
+      </button>
     </li>
   );
 }
