@@ -1,28 +1,9 @@
 import React, { useState } from "react";
 import Modal from "./components/Modal";
 import FriendsList from "./components/FriendsList";
-const DefaultFriends = [
-  {
-    name: "John Doe",
-    id: 1,
-    imgUrl: "https://i.pravatar.cc/70?=1",
-    balance: 50,
-  },
-  {
-    id: 2,
-    imgUrl: "https://i.pravatar.cc/70?=2",
-    balance: 0,
-    name: "Jane Doe",
-  },
-  {
-    name: "Janea Doe",
-    id: 3,
-    imgUrl: "https://i.pravatar.cc/70?=3",
-    balance: -20,
-  },
-];
+
 export default function App() {
-  const [friends, setFriends] = useState(DefaultFriends);
+  const [friends, setFriends] = useState([]);
   const [selectedFriend, setSelectedFriend] = useState({});
   const [showModal, setShowModal] = useState(false);
 
@@ -35,6 +16,12 @@ export default function App() {
     };
     setFriends([...friends, newFriend]);
   }
+
+  function handleRemoveFriend(friendID) {
+    const updatedFriends = friends.filter((friend) => friend.id !== friendID);
+    setFriends(updatedFriends);
+  }
+
   function openModal(friend) {
     setShowModal(true);
     setSelectedFriend(friend);
@@ -60,11 +47,16 @@ export default function App() {
     <div className="container">
       <FriendsList
         onAddFriend={handleAddFriend}
+        onRemove={handleRemoveFriend}
         friends={friends}
         onPayment={openModal}
       />
       {showModal ? (
-        <Modal onPayment={closeModal} friend={selectedFriend} />
+        <Modal
+          key={selectedFriend.name}
+          onPayment={closeModal}
+          friend={selectedFriend}
+        />
       ) : null}
     </div>
   );

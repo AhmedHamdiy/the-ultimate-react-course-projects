@@ -1,12 +1,4 @@
 export default function ReadBook({ book, onDelete }) {
-  const abook = {
-    id: 1,
-    title: "The Great Gatsby",
-    img: "https://m.media-amazon.com/images/I/41aM3QGf8ML.jpg",
-    rating: 4.3,
-    myRating: 4.7,
-    releaseDate: "1925",
-  };
   const { id, title, img, rating, myRating, releaseDate } = abook;
   return (
     <li className="read-book">
@@ -23,3 +15,11 @@ export default function ReadBook({ book, onDelete }) {
     </li>
   );
 }
+const abook = {
+  id: 1,
+  title: "The Great Gatsby",
+  img: "https://m.media-amazon.com/images/I/41aM3QGf8ML.jpg",
+  rating: 4.3,
+  myRating: 4.7,
+  releaseDate: "1925",
+};

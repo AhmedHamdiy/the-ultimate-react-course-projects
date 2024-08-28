@@ -93,14 +93,24 @@ input {
 }
 .friend-details {
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 5px;
+  position: relative;
 }
-.split {
+
+.remove-btn {
+  background-color: #821131;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
-  right: 10px;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
 }
 img {
   width: 60px;

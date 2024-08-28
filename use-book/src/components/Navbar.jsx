@@ -1,8 +1,9 @@
-import icon from "../../public/icon.svg";
-export default function Navbar() {
+import Logo from "./Logo";
+export default function Navbar({ children }) {
   return (
-    <div className="nav-bar">
-      <img src={icon} className="logo" />
-    </div>
+    <nav className="nav-bar">
+      <Logo />
+      {children}
+    </nav>
   );
 }

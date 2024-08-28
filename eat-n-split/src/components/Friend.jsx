@@ -1,13 +1,17 @@
 import React from "react";
 
-export default function Friend({ onPayement, friend }) {
+export default function Friend({ onPayement, onRemove, friend }) {
   return (
     <li className="friend-card">
       <div className="friend-details">
         <img src={friend.imgUrl} alt={friend.name} className="friend-img" />
-        <h4 className="friend-name">{friend.name}</h4>
+        <button className="btn split" onClick={() => onPayement(friend)}>
+          Select
+        </button>
       </div>
       <div className="friend-details">
+        <h4 className="friend-name">{friend.name}</h4>
+
         {friend.balance > 0 ? (
           <p className="money" style={{ color: "#45F745" }}>
             {friend.name} owes you {friend.balance}$
@@ -22,9 +26,9 @@ export default function Friend({ onPayement, friend }) {
           </p>
         )}
       </div>
-      <button className="btn split" onClick={() => onPayement(friend)}>
-        Select
-      </button>
+      <span className="remove-btn" onClick={() => onRemove(friend.id)}>
+        ❌️
+      </span>
     </li>
   );
 }

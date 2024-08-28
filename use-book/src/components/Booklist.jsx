@@ -1,13 +1,8 @@
-import PropTypes from "prop-types";
+/* eslint-disable react/prop-types */
 import Book from "./Book";
-
-Booklist.propTypes = {
-  books: PropTypes.array,
-  onSelect: PropTypes.func,
-};
 export default function Booklist({ books, onSelect }) {
   return (
-    <ul className="list">
+    <ul className={`list ${books.length > 5 ? "scrollable" : ""}`}>
       {books.map((book) => (
         <Book book={book} onSelect={onSelect} key={book.name} />
       ))}

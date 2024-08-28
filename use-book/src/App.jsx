@@ -1,9 +1,60 @@
 import React, { useState } from "react";
-import "./App.css";
 import Navbar from "./components/Navbar";
+import NumResults from "./components/NumResults";
+import Search from "./components/Search";
 import Booklist from "./components/Booklist";
 import SelectedBook from "./components/SelectedBook";
 import ReadBooksList from "./components/ReadBooksList";
+import Box from "./components/Box";
+
+export default function App() {
+  // const [books, setBooks] = useState([]);
+  // const [readBooks, setReadBooks] = useState([]);
+  const [books, setBooks] = useState(initialBooks);
+  const [readBooks, setReadBooks] = useState(initialReadBooks);
+  const [selectedId, setSelectedID] = useState(0);
+  const [query, setQuery] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState(null);
+  let avgRating = books.reduce((s, c, i, arr) => s + c / arr.length, 0);
+  let avgMyRating = readBooks.reduce((s, c, i, arr) => s + c / arr.length, 0);
+  function readBook(book) {
+    setReadBooks([...readBooks, book]);
+  }
+  function removeBook(id) {
+    setReadBooks(readBooks.filter((b) => b.id !== id));
+  }
+  return (
+    <React.Fragment>
+      <Navbar>
+        <Search query={query} onQuery={setQuery} />
+        <NumResults numResults={books.length} />
+      </Navbar>
+      <main>
+        <Box>
+          <Booklist
+            books={books}
+            onSelect={(id) =>
+              setSelectedID((selectedId) => (id === selectedId ? null : id))
+            }
+          />
+        </Box>
+        <Box>
+          {selectedId ? (
+            <SelectedBook id={selectedId} onRead={readBook} />
+          ) : (
+            <ReadBooksList
+              readBooks={readBooks}
+              avgRate={avgRating}
+              avgMyRate={avgMyRating}
+              onDelete={removeBook}
+            />
+          )}
+        </Box>
+      </main>
+    </React.Fragment>
+  );
+}
 const initialBooks = [
   {
     id: 1,
@@ -72,46 +123,3 @@ const initialReadBooks = [
     releaseDate: "1988",
   },
 ];
-
-export default function App() {
-  // const [books, setBooks] = useState([]);
-  // const [readBooks, setReadBooks] = useState([]);
-  const [books, setBooks] = useState(initialBooks);
-  const [readBooks, setReadBooks] = useState(initialReadBooks);
-  const [selectedId, setSelectedID] = useState(0);
-  let avgRating = books.reduce((s, c, i, arr) => s + c / arr.length, 0);
-  let avgMyRating = readBooks.reduce((s, c, i, arr) => s + c / arr.length, 0);
-  function readBook(book) {
-    setReadBooks([...readBooks, book]);
-  }
-  function removeBook(id) {
-    setReadBooks(readBooks.filter((b) => b.id !== id));
-  }
-  return (
-    <React.Fragment>
-      <Navbar onChangeQuery={setBooks} />
-      <div className="main">
-        <div className="Box">
-          <Booklist
-            books={books}
-            onSelect={(id) =>
-              setSelectedID((selectedId) => (id === selectedId ? null : id))
-            }
-          />
-        </div>
-        <div className="Box">
-          {selectedId ? (
-            <SelectedBook id={selectedId} onRead={readBook} />
-          ) : (
-            <ReadBooksList
-              readBooks={readBooks}
-              avgRate={avgRating}
-              avgMyRate={avgMyRating}
-              onDelete={removeBook}
-            />
-          )}
-        </div>
-      </div>
-    </React.Fragment>
-  );
-}

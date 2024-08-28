@@ -1,7 +1,7 @@
 :root {
-  --color-primary: #f4ac32;
-  --color-primary-light: #ffd131;
-  --color-text: #dee2e6;
+  --color-primary: #f39a00;
+  --color-primary-light: #fffb84;
+  --color-text: #f9f9f9;
   --color-text-dark: #adb5bd;
   --color-background-100: #343a40;
   --color-background-500: #2b3035;
@@ -24,14 +24,18 @@ html {
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-
   color: var(--color-text);
   background-color: var(--color-background-900);
-  padding: 2.4rem;
 }
 
 /* ******* */
-
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.4rem;
+  padding: 2.4rem 2.8rem 0rem 2.8rem;
+}
 .nav-bar {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -40,23 +44,25 @@ body {
   padding: 0 3.2rem;
   background-color: var(--color-primary);
   border-radius: 0.9rem;
+  width: 110rem;
 }
 
-.main {
+main {
+  width: 110rem;
   margin-top: 2.4rem;
   height: calc(100vh - 7.2rem - 3 * 2.4rem);
   display: flex;
-  gap: 2.4rem;
+  gap: 2.8rem;
   justify-content: center;
 }
 
 .box {
-  width: 42rem;
-  max-width: 42rem;
+  width: calc(100% - 2rem);
+  max-width: calc(100% - 2rem);
   background-color: var(--color-background-500);
   border-radius: 0.9rem;
-  overflow: scroll;
   position: relative;
+  height: 58rem;
 }
 
 .loader {
@@ -100,9 +106,7 @@ body {
   width: 40rem;
   transition: all 0.3s;
   color: var(--color-text);
-
-  /* background-color: var(--color-background-900); */
-  background-color: var(--color-primary-light);
+  background-color: var(--color-background-500);
 }
 
 .search::placeholder {
@@ -118,6 +122,7 @@ body {
 .num-results {
   justify-self: end;
   font-size: 1.8rem;
+  color: var(--color-text);
 }
 
 .btn-toggle {
@@ -139,7 +144,6 @@ body {
 .list {
   list-style: none;
   padding: 0.8rem 0;
-  overflow: scroll;
 }
 
 .list-read {
@@ -338,6 +342,20 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.scrollable {
+  overflow-y: scroll;
+  height: 100%;
+}
+.scrollable::-webkit-scrollbar {
+  width: 8px;
+}
+.scrollable::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+}
+.scrollable::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 /*
