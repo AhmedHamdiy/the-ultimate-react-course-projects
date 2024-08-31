@@ -1,0 +1,9 @@
+function Header() {
+  return (
+    <header className="app-header">
+      <h1>⚽️ SABA7O TA7DY</h1>
+    </header>
+  );
+}
+
+export default Header;

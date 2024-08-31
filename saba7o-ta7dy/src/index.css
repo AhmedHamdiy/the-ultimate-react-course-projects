@@ -1,68 +1,322 @@
+@import url("https://fonts.googleapis.com/css2?family=Graduate&display=swap");
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  --color-darkest: #343a40;
+  --color-dark: #495057;
+  --color-medium: #ced4da;
+  --color-light: #f1f3f5;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  --color-theme-light: #65c851;
+  --color-theme: #4e9f3d;
+  --color-theme-dark: #306326;
+  --color-accent: #ffa94d;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-a:hover {
-  color: #535bf2;
+
+html {
+  font-size: 62.5%;
+  font-family: "Roboto", serif;
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
   min-height: 100vh;
+  color: var(--color-light);
+  background-color: var(--color-medium);
+  padding: 3.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+#root {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+}
+.app-header {
+  font-family: "Graduate", serif;
+  height: 10rem;
+  color: var(--color-light);
+  background-image: linear-gradient(
+    to right,
+    var(--color-theme),
+    var(--color-theme-dark)
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 2rem;
+  border-radius: 2rem;
+}
+.main {
+  width: 100rem;
+  background-color: var(--color-dark);
+  height: 55rem;
+  padding: 0rem;
+  border-radius: 2rem;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
+.error {
+  text-align: center;
+  font-size: 1.6rem;
   font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  padding: 2rem;
+  background-color: #495057;
+  border-radius: 100px;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+img {
+  width: 14rem;
+}
+h1 {
+  font-size: 5.6rem;
+}
+
+h1 h2 {
+  font-size: 3.6rem;
+  margin-bottom: 2rem;
+}
+.screen {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+  width: 100%;
+  height: 100%;
+}
+
+.start-screen {
+  justify-content: center;
+}
+.start-screen h2 {
+  font-size: 5rem;
+}
+.start-screen p {
+  font-size: 3rem;
+  color: var(--color-medium);
+}
+
+.players-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  list-style: none;
+  gap: 4.8rem;
+}
+.player-card {
+  margin: 0px;
+  background-color: var(--color-theme);
+  padding: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: var(--color-light);
+  cursor: pointer;
+}
+.player-card:hover {
+  background-color: var(--color-theme-dark);
+}
+.player-card img {
+  width: 100%;
+  height: 10rem;
+  border-radius: 1rem;
+}
+.active-player-card {
+  background-color: var(--color-theme-dark);
+}
+h3 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 4rem;
+}
+
+h4 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 2.4rem;
+}
+
+.start {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.progress {
+  margin-bottom: 4rem;
+  display: grid;
+  justify-content: space-between;
+  gap: 1.2rem;
+  grid-template-columns: auto auto;
+  font-size: 1.8rem;
+  color: var(--color-medium);
+}
+
+progress {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 12px;
+  grid-column: 1 / -1;
+}
+
+::-webkit-progress-bar {
+  background-color: var(--color-medium);
+  border-radius: 100px;
+}
+::-webkit-progress-value {
+  background-color: var(--color-theme);
+  border-radius: 100px;
+}
+
+.btn {
+  display: block;
+  font-family: inherit;
+  color: inherit;
+  font-size: 2rem;
+  border: 2px solid var(--color-theme-dark);
+  background-color: var(--color-theme);
+  padding: 1.2rem 2.4rem;
+  cursor: pointer;
+  border-radius: 100px;
+  transition: 0.3s;
+}
+
+.btn:not([disabled]):hover {
+  background-color: var(--color-theme-dark);
+  opacity: 0.9;
+}
+
+.btn-option:not([disabled]):hover {
+  transform: translateX(1.2rem);
+}
+
+.btn[disabled]:hover {
+  cursor: not-allowed;
+}
+
+.btn-ui {
+  float: right;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-bottom: 3.2rem;
+}
+
+.btn-option {
+  width: 100%;
+  text-align: left;
+}
+
+.btn-option.correct {
+  background-color: var(--color-theme);
+  border: 2px solid var(--color-theme);
+  color: var(--color-light);
+}
+.btn-option.wrong {
+  background-color: var(--color-accent);
+  border: 2px solid var(--color-accent);
+  color: var(--color-darkest);
+}
+
+.answer {
+  transform: translateX(2rem);
+}
+
+.result {
+  background-color: var(--color-theme);
+  color: var(--color-light);
+  border-radius: 2rem;
+  text-align: center;
+  padding: 2rem;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1.6rem;
+}
+
+.result span {
+  font-size: 2.2rem;
+  margin-right: 4px;
+}
+
+.highscore {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+
+.loader-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.6rem;
+  color: var(--color-medium);
+  font-size: 5rem;
+}
+
+.timer {
+  float: left;
+  font-size: 1.8rem;
+  color: var(--color-medium);
+  border: 2px solid var(--color-dark);
+  padding: 1.35rem 2.8rem;
+  border-radius: 100px;
+}
+
+/* CREDIT: https://dev.to/afif/i-made-100-css-loaders-for-your-next-project-4eje */
+.loader {
+  width: 40rem;
+  height: 15rem;
+  background: radial-gradient(circle closest-side, currentColor 90%, #0000) 0%
+      50%,
+    radial-gradient(circle closest-side, currentColor 90%, #0000) 50% 50%,
+    radial-gradient(circle closest-side, currentColor 90%, #0000) 100% 50%;
+  background-size: calc(100% / 3) 5rem;
+  background-repeat: no-repeat;
+  animation: loader 1.5s infinite linear;
+}
+
+@keyframes loader {
+  20% {
+    background-position: 0% 0%, 50% 50%, 100% 50%;
   }
-  a:hover {
-    color: #747bff;
+  40% {
+    background-position: 0% 100%, 50% 0%, 100% 50%;
   }
-  button {
-    background-color: #f9f9f9;
+  60% {
+    background-position: 0% 50%, 50% 100%, 100% 0%;
+  }
+  80% {
+    background-position: 0% 50%, 50% 50%, 100% 100%;
   }
 }
+
+/* 
+.kick-img,
+.sui-img {
+  position: absolute;
+  width: 18rem;
+}
+.kick-img {
+  bottom: 3rem;
+  left: 20rem;
+  rotate: -10deg;
+}
+.sui-img {
+  bottom: 4.5rem;
+  right: 20rem;
+} */
