@@ -2,6 +2,8 @@
 
 Test your knowledge about football with this simple quiz.
 
+![Screenshot from 2024-09-01 14-52-00](https://github.com/user-attachments/assets/5b4348a1-84eb-433a-a083-253b63f31c9a)
+
 ## How to Run:
 
     1- clone the repo
