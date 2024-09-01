@@ -1,4 +1,4 @@
-import { useReducer } from "react";
+import { act, useReducer } from "react";
 import Header from "./Header.jsx";
 import Main from "./Main.jsx";
 import StartScreen from "./screens/StartScreen";
@@ -23,6 +23,19 @@ const initialState = {
   maxPoints: 0,
 };
 function reducer(state, action) {
+  const {
+    status,
+    players,
+    selectedPlayer,
+    questions,
+    answers,
+    index,
+    points,
+    highscore,
+    secondsRemaining,
+    errorMsg,
+    maxPoints,
+  } = state;
   switch (action.type) {
     case "dataLoading":
       return { ...state, status: "loading", errorMsg: null };
@@ -42,37 +55,53 @@ function reducer(state, action) {
         ...state,
         status: "active",
         errorMsg: null,
-        questions: state.selectedPlayer.questions,
-        maxPoints: state.selectedPlayer.questions.reduce(
+        questions: selectedPlayer.questions,
+        maxPoints: selectedPlayer.questions.reduce(
           (prev, cur) => cur.points + prev,
           0
         ),
         highscore:
-          localStorage.getItem(`highscore-${state.selectedPlayer.name}`) || 0,
+          localStorage.getItem(`highscore-${selectedPlayer.name}`) || 0,
         secondsRemaining:
-          state.selectedPlayer.questions.length * SECONDS_PER_QUESTION,
+          selectedPlayer.questions.length * SECONDS_PER_QUESTION,
       };
+    case "tick":
+      return {
+        ...state,
+        secondsRemaining: secondsRemaining - 1,
+        status: secondsRemaining === 0 ? "finished" : state.status,
+      };
+    case "newAnswer":
+      return {
+        ...state,
+        answers: [...answers, action.payload],
+        points:
+          points +
+          (action.payload === questions[index].answer
+            ? questions[index].points
+            : 0),
+      };
+    case "step":
+      return { ...state, index: index + action.payload };
     case "finish": {
       localStorage.setItem(
-        `highscore-${state.selectedPlayer.name}`,
+        `highscore-${selectedPlayer.name}`,
         Math.max(
-          state.points,
-          localStorage.getItem(`highscore-${state.selectedPlayer.name}`) || 0
+          points,
+          localStorage.getItem(`highscore-${selectedPlayer.name}`) || 0
         )
       );
       return {
         ...state,
         status: "finished",
-        highscore: localStorage.getItem(
-          `highscore-${state.selectedPlayer.name}`
-        ),
+        highscore: localStorage.getItem(`highscore-${selectedPlayer.name}`),
         secondsRemaining:
-          state.selectedPlayer.questions.length * SECONDS_PER_QUESTION,
+          selectedPlayer.questions.length * SECONDS_PER_QUESTION,
         errorMsg: null,
       };
     }
     case "restart":
-      return { ...initialState, players: state.players, status: "ready" };
+      return { ...initialState, players: players, status: "ready" };
     default:
       return { ...state, status: "error", errorMsg: "Unknown Acion" };
   }
@@ -111,12 +140,14 @@ function App() {
         )}
         {status === "active" && (
           <QuestionScreen
-            question={questions[index]}
             index={index}
+            numQuestions={questions.length}
+            questions={questions}
             answers={answers}
             points={points}
-            secondsRemaining={secondsRemaining}
             maxPoints={maxPoints}
+            secondsRemaining={secondsRemaining}
+            dispatch={dispatch}
           />
         )}
         {status === "finished" && (

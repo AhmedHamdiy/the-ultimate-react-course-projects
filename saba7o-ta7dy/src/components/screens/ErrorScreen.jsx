@@ -1,7 +1,7 @@
 function ErrorScreen({ errorMsg }) {
   return (
     <div className="error-screen screen">
-      <h1>⛔️ errorMsg</h1>
+      <h2 className="error">⛔️ {errorMsg}</h2>
     </div>
   );
 }

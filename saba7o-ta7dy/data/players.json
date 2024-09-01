@@ -6,112 +6,112 @@
       "questions": [
         {
           "question": "What country does Lionel Messi represent?",
-          "answers": ["Argentina", "Spain", "Brazil", "Portugal"],
-          "correctAnswerIndex": 0,
+          "options": ["Argentina", "Spain", "Brazil", "Portugal"],
+          "answer": 0,
           "points": 10
         },
         {
           "question": "Which club did Messi spend most of his career at?",
-          "answers": [
+          "options": [
             "Paris Saint-Germain",
             "Manchester City",
             "Barcelona",
             "Real Madrid"
           ],
-          "correctAnswerIndex": 2,
+          "answer": 2,
           "points": 10
         },
         {
           "question": "What is Messi's preferred playing position?",
-          "answers": ["Defender", "Goalkeeper", "Midfielder", "Forward"],
-          "correctAnswerIndex": 3,
+          "options": ["Defender", "Goalkeeper", "Midfielder", "Forward"],
+          "answer": 3,
           "points": 10
         },
         {
           "question": "How many Ballon d'Or awards has Messi won?",
-          "answers": ["5", "6", "7", "8"],
-          "correctAnswerIndex": 2,
+          "options": ["5", "6", "7", "8"],
+          "answer": 2,
           "points": 20
         },
         {
           "question": "In which year did Messi win his first Ballon d'Or?",
-          "answers": ["2008", "2009", "2010", "2011"],
-          "correctAnswerIndex": 1,
+          "options": ["2008", "2009", "2010", "2011"],
+          "answer": 1,
           "points": 20
         },
         {
           "question": "What number jersey does Messi commonly wear?",
-          "answers": ["7", "8", "9", "10"],
-          "correctAnswerIndex": 3,
+          "options": ["7", "8", "9", "10"],
+          "answer": 3,
           "points": 20
         },
         {
           "question": "Which club did Messi join after leaving Barcelona?",
-          "answers": [
+          "options": [
             "Paris Saint-Germain",
             "Manchester United",
             "Inter Milan",
             "Juventus"
           ],
-          "correctAnswerIndex": 0,
+          "answer": 0,
           "points": 30
         },
         {
           "question": "How many goals did Messi score in his career for Barcelona?",
-          "answers": ["672", "650", "700", "680"],
-          "correctAnswerIndex": 0,
+          "options": ["672", "650", "700", "680"],
+          "answer": 0,
           "points": 30
         },
         {
           "question": "Which year did Messi win his first FIFA World Cup?",
-          "answers": ["2010", "2014", "2018", "2022"],
-          "correctAnswerIndex": 3,
+          "options": ["2010", "2014", "2018", "2022"],
+          "answer": 3,
           "points": 30
         },
         {
           "question": "Who did Argentina beat in the 2022 World Cup final?",
-          "answers": ["Brazil", "Germany", "France", "Netherlands"],
-          "correctAnswerIndex": 2,
+          "options": ["Brazil", "Germany", "France", "Netherlands"],
+          "answer": 2,
           "points": 40
         },
         {
           "question": "In which year did Messi make his debut for Barcelona?",
-          "answers": ["2000", "2003", "2004", "2006"],
-          "correctAnswerIndex": 2,
+          "options": ["2000", "2003", "2004", "2006"],
+          "answer": 2,
           "points": 40
         },
         {
           "question": "How many times has Messi won the UEFA Champions League?",
-          "answers": ["3", "4", "5", "6"],
-          "correctAnswerIndex": 1,
+          "options": ["3", "4", "5", "6"],
+          "answer": 1,
           "points": 40
         },
         {
           "question": "What is the name of Messi's charity foundation?",
-          "answers": [
+          "options": [
             "Leo Messi Foundation",
             "Messi & Friends",
             "Team Messi Foundation",
             "Messi Global Foundation"
           ],
-          "correctAnswerIndex": 0,
+          "answer": 0,
           "points": 50
         },
         {
           "question": "Which team did Messi score his first senior career hat-trick against?",
-          "answers": ["Real Madrid", "Sevilla", "Getafe", "Espanyol"],
-          "correctAnswerIndex": 0,
+          "options": ["Real Madrid", "Sevilla", "Getafe", "Espanyol"],
+          "answer": 0,
           "points": 50
         },
         {
           "question": "What is Messi's full name?",
-          "answers": [
+          "options": [
             "Lionel Andres Messi",
             "Lionel Messi Gonzalez",
             "Lionel Javier Messi",
             "Lionel Messi Maradona"
           ],
-          "correctAnswerIndex": 0,
+          "answer": 0,
           "points": 50
         }
       ]
@@ -122,112 +122,112 @@
       "questions": [
         {
           "question": "What country does Cristiano Ronaldo represent?",
-          "answers": ["Brazil", "Spain", "Portugal", "Italy"],
-          "correctAnswerIndex": 2,
+          "options": ["Brazil", "Spain", "Portugal", "Italy"],
+          "answer": 2,
           "points": 10
         },
         {
           "question": "Which club did Ronaldo start his professional career with?",
-          "answers": [
+          "options": [
             "Sporting CP",
             "Manchester United",
             "Real Madrid",
             "Juventus"
           ],
-          "correctAnswerIndex": 0,
+          "answer": 0,
           "points": 10
         },
         {
           "question": "What is Ronaldo's preferred playing position?",
-          "answers": ["Midfielder", "Goalkeeper", "Defender", "Forward"],
-          "correctAnswerIndex": 3,
+          "options": ["Midfielder", "Goalkeeper", "Defender", "Forward"],
+          "answer": 3,
           "points": 10
         },
         {
           "question": "How many Ballon d'Or awards has Ronaldo won?",
-          "answers": ["3", "4", "5", "6"],
-          "correctAnswerIndex": 2,
+          "options": ["3", "4", "5", "6"],
+          "answer": 2,
           "points": 20
         },
         {
           "question": "In which year did Ronaldo win his first Ballon d'Or?",
-          "answers": ["2008", "2009", "2010", "2011"],
-          "correctAnswerIndex": 0,
+          "options": ["2008", "2009", "2010", "2011"],
+          "answer": 0,
           "points": 20
         },
         {
           "question": "What number jersey does Ronaldo commonly wear?",
-          "answers": ["7", "9", "10", "11"],
-          "correctAnswerIndex": 0,
+          "options": ["7", "9", "10", "11"],
+          "answer": 0,
           "points": 20
         },
         {
           "question": "Which club did Ronaldo join after leaving Real Madrid?",
-          "answers": [
+          "options": [
             "Manchester United",
             "Juventus",
             "Paris Saint-Germain",
             "Chelsea"
           ],
-          "correctAnswerIndex": 1,
+          "answer": 1,
           "points": 30
         },
         {
           "question": "How many goals did Ronaldo score in his career for Real Madrid?",
-          "answers": ["450", "451", "500", "400"],
-          "correctAnswerIndex": 0,
+          "options": ["450", "451", "500", "400"],
+          "answer": 0,
           "points": 30
         },
         {
           "question": "Which year did Ronaldo win his first UEFA European Championship?",
-          "answers": ["2004", "2008", "2012", "2016"],
-          "correctAnswerIndex": 3,
+          "options": ["2004", "2008", "2012", "2016"],
+          "answer": 3,
           "points": 30
         },
         {
           "question": "Who did Portugal beat in the 2016 UEFA European Championship final?",
-          "answers": ["Germany", "France", "Italy", "Spain"],
-          "correctAnswerIndex": 1,
+          "options": ["Germany", "France", "Italy", "Spain"],
+          "answer": 1,
           "points": 40
         },
         {
           "question": "In which year did Ronaldo make his debut for Manchester United?",
-          "answers": ["2002", "2003", "2004", "2005"],
-          "correctAnswerIndex": 1,
+          "options": ["2002", "2003", "2004", "2005"],
+          "answer": 1,
           "points": 40
         },
         {
           "question": "How many times has Ronaldo won the UEFA Champions League?",
-          "answers": ["3", "4", "5", "6"],
-          "correctAnswerIndex": 2,
+          "options": ["3", "4", "5", "6"],
+          "answer": 2,
           "points": 40
         },
         {
           "question": "What is the name of Ronaldo's charity foundation?",
-          "answers": [
+          "options": [
             "CR7 Foundation",
             "Ronaldo's Legacy",
             "Cristiano's Foundation",
             "CR7 Charity"
           ],
-          "correctAnswerIndex": 0,
+          "answer": 0,
           "points": 50
         },
         {
           "question": "Which team did Ronaldo score his first senior career hat-trick against?",
-          "answers": ["Newcastle United", "Getafe", "Sevilla", "Espanyol"],
-          "correctAnswerIndex": 0,
+          "options": ["Newcastle United", "Getafe", "Sevilla", "Espanyol"],
+          "answer": 0,
           "points": 50
         },
         {
           "question": "What is Ronaldo's full name?",
-          "answers": [
+          "options": [
             "Cristiano Ronaldo dos Santos Aveiro",
             "Cristiano Ronaldo Silva",
             "Cristiano Ronaldo Sousa",
             "Cristiano Ronaldo Almeida"
           ],
-          "correctAnswerIndex": 0,
+          "answer": 0,
           "points": 50
         }
       ]
@@ -238,107 +238,107 @@
       "questions": [
         {
           "question": "What country does Mohamed Salah represent?",
-          "answers": ["Egypt", "Morocco", "Algeria", "Tunisia"],
-          "correctAnswerIndex": 0,
+          "options": ["Egypt", "Morocco", "Algeria", "Tunisia"],
+          "answer": 0,
           "points": 10
         },
         {
           "question": "Which club did Salah join in the Premier League in 2017?",
-          "answers": ["Chelsea", "Liverpool", "Manchester United", "Arsenal"],
-          "correctAnswerIndex": 1,
+          "options": ["Chelsea", "Liverpool", "Manchester United", "Arsenal"],
+          "answer": 1,
           "points": 10
         },
         {
           "question": "What position does Mohamed Salah play?",
-          "answers": ["Defender", "Midfielder", "Forward", "Goalkeeper"],
-          "correctAnswerIndex": 2,
+          "options": ["Defender", "Midfielder", "Forward", "Goalkeeper"],
+          "answer": 2,
           "points": 10
         },
         {
           "question": "Which Italian club did Salah play for before joining Liverpool?",
-          "answers": ["Inter Milan", "Juventus", "AS Roma", "Napoli"],
-          "correctAnswerIndex": 2,
+          "options": ["Inter Milan", "Juventus", "AS Roma", "Napoli"],
+          "answer": 2,
           "points": 20
         },
         {
           "question": "In which year did Salah win the Premier League Golden Boot for the first time?",
-          "answers": ["2017", "2018", "2019", "2020"],
-          "correctAnswerIndex": 1,
+          "options": ["2017", "2018", "2019", "2020"],
+          "answer": 1,
           "points": 20
         },
         {
           "question": "What is Salah's nickname among fans?",
-          "answers": [
+          "options": [
             "The Pharaoh",
             "The King of Egypt",
             "Egyptian King",
             "The Anfield Hero"
           ],
-          "correctAnswerIndex": 2,
+          "answer": 2,
           "points": 20
         },
         {
           "question": "Which Swiss club did Salah play for before moving to the Premier League?",
-          "answers": ["Young Boys", "FC Zurich", "Basel", "Lugano"],
-          "correctAnswerIndex": 2,
+          "options": ["Young Boys", "FC Zurich", "Basel", "Lugano"],
+          "answer": 2,
           "points": 30
         },
         {
           "question": "How many goals did Salah score in his record-breaking 2017-2018 Premier League season?",
-          "answers": ["30", "31", "32", "33"],
-          "correctAnswerIndex": 2,
+          "options": ["30", "31", "32", "33"],
+          "answer": 2,
           "points": 30
         },
         {
           "question": "Which country did Salah help Egypt qualify for the 2018 FIFA World Cup?",
-          "answers": ["Brazil", "Russia", "Qatar", "South Africa"],
-          "correctAnswerIndex": 1,
+          "options": ["Brazil", "Russia", "Qatar", "South Africa"],
+          "answer": 1,
           "points": 30
         },
         {
           "question": "What jersey number does Salah wear at Liverpool?",
-          "answers": ["7", "9", "10", "11"],
-          "correctAnswerIndex": 3,
+          "options": ["7", "9", "10", "11"],
+          "answer": 3,
           "points": 40
         },
         {
           "question": "In which city was Mohamed Salah born?",
-          "answers": ["Cairo", "Giza", "Nagrig", "Alexandria"],
-          "correctAnswerIndex": 2,
+          "options": ["Cairo", "Giza", "Nagrig", "Alexandria"],
+          "answer": 2,
           "points": 40
         },
         {
           "question": "Which award did Salah win at the 2018 FIFA Best Awards?",
-          "answers": [
+          "options": [
             "Best Goalkeeper",
             "Best Defender",
             "Best Midfielder",
             "Puskás Award"
           ],
-          "correctAnswerIndex": 3,
+          "answer": 3,
           "points": 40
         },
         {
           "question": "Which year did Salah win the African Footballer of the Year for the first time?",
-          "answers": ["2016", "2017", "2018", "2019"],
-          "correctAnswerIndex": 1,
+          "options": ["2016", "2017", "2018", "2019"],
+          "answer": 1,
           "points": 50
         },
         {
           "question": "Against which team did Salah score his first goal for Liverpool?",
-          "answers": ["Watford", "Arsenal", "Chelsea", "Manchester United"],
-          "correctAnswerIndex": 0,
+          "options": ["Watford", "Arsenal", "Chelsea", "Manchester United"],
+          "answer": 0,
           "points": 50
         },
         {
           "question": "What is Salah's full name?",
-          "answers": [
+          "options": [
             "Mohamed Salah El-Ghazi",
             "Mohamed Salah El-Shenawy",
             "Mohamed Salah Ghaly",
             "Mohamed Salah El-Neny"
           ],
-          "correctAnswerIndex": 2,
+          "answer": 2,
           "points": 50
         }
       ]
@@ -349,112 +349,112 @@
       "questions": [
         {
           "question": "What country does Luis Suárez represent?",
-          "answers": ["Argentina", "Uruguay", "Brazil", "Chile"],
-          "correctAnswerIndex": 1,
+          "options": ["Argentina", "Uruguay", "Brazil", "Chile"],
+          "answer": 1,
           "points": 1
         },
         {
           "question": "Which Premier League club did Luis Suárez play for?",
-          "answers": ["Manchester United", "Liverpool", "Arsenal", "Chelsea"],
-          "correctAnswerIndex": 1,
+          "options": ["Manchester United", "Liverpool", "Arsenal", "Chelsea"],
+          "answer": 1,
           "points": 2
         },
         {
           "question": "What position does Luis Suárez primarily play?",
-          "answers": ["Defender", "Midfielder", "Forward", "Goalkeeper"],
-          "correctAnswerIndex": 2,
+          "options": ["Defender", "Midfielder", "Forward", "Goalkeeper"],
+          "answer": 2,
           "points": 3
         },
         {
           "question": "Which Spanish club did Suárez join after leaving Liverpool?",
-          "answers": ["Real Madrid", "Atletico Madrid", "Barcelona", "Sevilla"],
-          "correctAnswerIndex": 2,
+          "options": ["Real Madrid", "Atletico Madrid", "Barcelona", "Sevilla"],
+          "answer": 2,
           "points": 4
         },
         {
           "question": "In which year did Suárez win the European Golden Shoe for the first time?",
-          "answers": ["2013", "2014", "2015", "2016"],
-          "correctAnswerIndex": 0,
+          "options": ["2013", "2014", "2015", "2016"],
+          "answer": 0,
           "points": 5
         },
         {
           "question": "Which Dutch club did Luis Suárez play for before joining Liverpool?",
-          "answers": ["Ajax", "PSV", "Feyenoord", "Twente"],
-          "correctAnswerIndex": 0,
+          "options": ["Ajax", "PSV", "Feyenoord", "Twente"],
+          "answer": 0,
           "points": 6
         },
         {
           "question": "In which World Cup did Suárez famously bite an opponent?",
-          "answers": ["2010", "2014", "2018", "2022"],
-          "correctAnswerIndex": 1,
+          "options": ["2010", "2014", "2018", "2022"],
+          "answer": 1,
           "points": 7
         },
         {
           "question": "Against which team did Suárez score his first hat-trick for Barcelona?",
-          "answers": ["Real Madrid", "Atletico Madrid", "Valencia", "Espanyol"],
-          "correctAnswerIndex": 0,
+          "options": ["Real Madrid", "Atletico Madrid", "Valencia", "Espanyol"],
+          "answer": 0,
           "points": 8
         },
         {
           "question": "Which Uruguayan club did Suárez start his professional career with?",
-          "answers": [
+          "options": [
             "Peñarol",
             "Nacional",
             "Defensor Sporting",
             "River Plate"
           ],
-          "correctAnswerIndex": 1,
+          "answer": 1,
           "points": 9
         },
         {
           "question": "In which year did Suárez join Atletico Madrid?",
-          "answers": ["2018", "2019", "2020", "2021"],
-          "correctAnswerIndex": 2,
+          "options": ["2018", "2019", "2020", "2021"],
+          "answer": 2,
           "points": 40
         },
         {
           "question": "Which year did Suárez win the Copa América with Uruguay?",
-          "answers": ["2010", "2011", "2012", "2013"],
-          "correctAnswerIndex": 1,
+          "options": ["2010", "2011", "2012", "2013"],
+          "answer": 1,
           "points": 40
         },
         {
           "question": "Which international teammate often partners with Suárez in Uruguay's attack?",
-          "answers": [
+          "options": [
             "Diego Forlán",
             "Edinson Cavani",
             "Nicolás Lodeiro",
             "Cristian Rodríguez"
           ],
-          "correctAnswerIndex": 1,
+          "answer": 1,
           "points": 40
         },
         {
           "question": "Which South American competition did Suárez help Uruguay win in 2011?",
-          "answers": [
+          "options": [
             "Copa Libertadores",
             "Copa América",
             "Copa Sudamericana",
             "Recopa Sudamericana"
           ],
-          "correctAnswerIndex": 1,
+          "answer": 1,
           "points": 50
         },
         {
           "question": "Which manager signed Suárez for Liverpool?",
-          "answers": [
+          "options": [
             "Kenny Dalglish",
             "Rafael Benítez",
             "Brendan Rodgers",
             "Jürgen Klopp"
           ],
-          "correctAnswerIndex": 0,
+          "answer": 0,
           "points": 50
         },
         {
           "question": "Which year did Suárez become the Premier League's top scorer?",
-          "answers": ["2012", "2013", "2014", "2015"],
-          "correctAnswerIndex": 2,
+          "options": ["2012", "2013", "2014", "2015"],
+          "answer": 2,
           "points": 50
         }
       ]
@@ -465,117 +465,117 @@
       "questions": [
         {
           "question": "What country does Kylian Mbappé represent?",
-          "answers": ["France", "Brazil", "Portugal", "Spain"],
-          "correctAnswerIndex": 0,
+          "options": ["France", "Brazil", "Portugal", "Spain"],
+          "answer": 0,
           "points": 10
         },
         {
           "question": "Which club did Mbappé join in 2017?",
-          "answers": ["Monaco", "PSG", "Real Madrid", "Barcelona"],
-          "correctAnswerIndex": 1,
+          "options": ["Monaco", "PSG", "Real Madrid", "Barcelona"],
+          "answer": 1,
           "points": 10
         },
         {
           "question": "What is Mbappé’s preferred playing position?",
-          "answers": ["Defender", "Midfielder", "Forward", "Goalkeeper"],
-          "correctAnswerIndex": 2,
+          "options": ["Defender", "Midfielder", "Forward", "Goalkeeper"],
+          "answer": 2,
           "points": 10
         },
         {
           "question": "In which year did Mbappé win the FIFA World Cup with France?",
-          "answers": ["2014", "2018", "2022", "2026"],
-          "correctAnswerIndex": 1,
+          "options": ["2014", "2018", "2022", "2026"],
+          "answer": 1,
           "points": 20
         },
         {
           "question": "What number jersey does Mbappé commonly wear for PSG?",
-          "answers": ["7", "9", "10", "11"],
-          "correctAnswerIndex": 0,
+          "options": ["7", "9", "10", "11"],
+          "answer": 0,
           "points": 20
         },
         {
           "question": "Which French club did Mbappé start his professional career with?",
-          "answers": ["Marseille", "Lyon", "Monaco", "PSG"],
-          "correctAnswerIndex": 2,
+          "options": ["Marseille", "Lyon", "Monaco", "PSG"],
+          "answer": 2,
           "points": 20
         },
         {
           "question": "In which year did Mbappé make his debut for the French national team?",
-          "answers": ["2015", "2016", "2017", "2018"],
-          "correctAnswerIndex": 2,
+          "options": ["2015", "2016", "2017", "2018"],
+          "answer": 2,
           "points": 30
         },
         {
           "question": "Which team did Mbappé score against in the 2018 World Cup final?",
-          "answers": ["Brazil", "Germany", "Croatia", "Argentina"],
-          "correctAnswerIndex": 2,
+          "options": ["Brazil", "Germany", "Croatia", "Argentina"],
+          "answer": 2,
           "points": 30
         },
         {
           "question": "Which award did Mbappé win at the 2018 World Cup?",
-          "answers": [
+          "options": [
             "Golden Boot",
             "Golden Ball",
             "Best Young Player",
             "Silver Boot"
           ],
-          "correctAnswerIndex": 2,
+          "answer": 2,
           "points": 30
         },
         {
           "question": "What is Mbappé's full name?",
-          "answers": [
+          "options": [
             "Kylian Adesanmi Mbappé",
             "Kylian Mbappé Lottin",
             "Kylian Ousmane Mbappé",
             "Kylian Aboubakar Mbappé"
           ],
-          "correctAnswerIndex": 1,
+          "answer": 1,
           "points": 40
         },
         {
           "question": "Against which team did Mbappé score a hat-trick in the 2022 World Cup final?",
-          "answers": ["Brazil", "Argentina", "Germany", "Spain"],
-          "correctAnswerIndex": 1,
+          "options": ["Brazil", "Argentina", "Germany", "Spain"],
+          "answer": 1,
           "points": 40
         },
         {
           "question": "Which manager signed Mbappé for PSG?",
-          "answers": [
+          "options": [
             "Thomas Tuchel",
             "Unai Emery",
             "Mauricio Pochettino",
             "Carlo Ancelotti"
           ],
-          "correctAnswerIndex": 1,
+          "answer": 1,
           "points": 40
         },
         {
           "question": "Which French national team manager gave Mbappé his debut?",
-          "answers": [
+          "options": [
             "Didier Deschamps",
             "Laurent Blanc",
             "Raymond Domenech",
             "Zinedine Zidane"
           ],
-          "correctAnswerIndex": 0,
+          "answer": 0,
           "points": 50
         },
         {
           "question": "Which year did Mbappé win the Ligue 1 title with Monaco?",
-          "answers": ["2015", "2016", "2017", "2018"],
-          "correctAnswerIndex": 2,
+          "options": ["2015", "2016", "2017", "2018"],
+          "answer": 2,
           "points": 50
         },
         {
           "question": "Which famous footballer is often compared to Mbappé for their similar playing style?",
-          "answers": [
+          "options": [
             "Lionel Messi",
             "Cristiano Ronaldo",
             "Thierry Henry",
             "Ronaldinho"
           ],
-          "correctAnswerIndex": 2,
+          "answer": 2,
           "points": 50
         }
       ]
@@ -586,127 +586,127 @@
       "questions": [
         {
           "question": "What country did Diego Maradona represent?",
-          "answers": ["Argentina", "Brazil", "Italy", "Spain"],
-          "correctAnswerIndex": 0,
+          "options": ["Argentina", "Brazil", "Italy", "Spain"],
+          "answer": 0,
           "points": 10
         },
         {
           "question": "Which World Cup did Maradona famously win?",
-          "answers": ["1978", "1982", "1986", "1990"],
-          "correctAnswerIndex": 2,
+          "options": ["1978", "1982", "1986", "1990"],
+          "answer": 2,
           "points": 10
         },
         {
           "question": "What was the nickname of the infamous goal Maradona scored against England in 1986?",
-          "answers": [
+          "options": [
             "The Hand of God",
             "The Golden Goal",
             "The Miracle Goal",
             "The Lucky Goal"
           ],
-          "correctAnswerIndex": 0,
+          "answer": 0,
           "points": 10
         },
         {
           "question": "Which Italian club did Maradona play for during his peak?",
-          "answers": ["Juventus", "Napoli", "AC Milan", "Inter Milan"],
-          "correctAnswerIndex": 1,
+          "options": ["Juventus", "Napoli", "AC Milan", "Inter Milan"],
+          "answer": 1,
           "points": 20
         },
         {
           "question": "In which year did Maradona retire from professional football?",
-          "answers": ["1994", "1997", "2000", "2003"],
-          "correctAnswerIndex": 1,
+          "options": ["1994", "1997", "2000", "2003"],
+          "answer": 1,
           "points": 20
         },
         {
           "question": "Which position did Maradona primarily play?",
-          "answers": ["Defender", "Midfielder", "Forward", "Goalkeeper"],
-          "correctAnswerIndex": 1,
+          "options": ["Defender", "Midfielder", "Forward", "Goalkeeper"],
+          "answer": 1,
           "points": 20
         },
         {
           "question": "Which Argentine club did Maradona start his professional career with?",
-          "answers": [
+          "options": [
             "Boca Juniors",
             "River Plate",
             "Argentinos Juniors",
             "Independiente"
           ],
-          "correctAnswerIndex": 2,
+          "answer": 2,
           "points": 30
         },
         {
           "question": "Which World Cup match featured Maradona’s 'Goal of the Century'?",
-          "answers": [
+          "options": [
             "Against Brazil",
             "Against England",
             "Against Germany",
             "Against Italy"
           ],
-          "correctAnswerIndex": 1,
+          "answer": 1,
           "points": 30
         },
         {
           "question": "What is the name of the stadium in Napoli that was renamed after Maradona?",
-          "answers": [
+          "options": [
             "San Paolo",
             "Diego Maradona Stadium",
             "San Siro",
             "Stadio Olimpico"
           ],
-          "correctAnswerIndex": 1,
+          "answer": 1,
           "points": 30
         },
         {
           "question": "Which year did Maradona take charge as the manager of the Argentine national team?",
-          "answers": ["2006", "2008", "2010", "2012"],
-          "correctAnswerIndex": 1,
+          "options": ["2006", "2008", "2010", "2012"],
+          "answer": 1,
           "points": 40
         },
         {
           "question": "In which country did Maradona have a brief stint as a coach after retiring?",
-          "answers": ["Mexico", "United Arab Emirates", "Spain", "Russia"],
-          "correctAnswerIndex": 1,
+          "options": ["Mexico", "United Arab Emirates", "Spain", "Russia"],
+          "answer": 1,
           "points": 40
         },
         {
           "question": "Which club did Maradona join after his spell at Napoli?",
-          "answers": [
+          "options": [
             "Sevilla",
             "Barcelona",
             "Newell's Old Boys",
             "Boca Juniors"
           ],
-          "correctAnswerIndex": 0,
+          "answer": 0,
           "points": 40
         },
         {
           "question": "Which injury did Maradona suffer that affected his career at Barcelona?",
-          "answers": [
+          "options": [
             "Broken leg",
             "Knee injury",
             "Shoulder injury",
             "Head injury"
           ],
-          "correctAnswerIndex": 0,
+          "answer": 0,
           "points": 50
         },
         {
           "question": "What is the name of the famous documentary about Maradona's life?",
-          "answers": [
+          "options": [
             "The Golden Boy",
             "Maradona: Hand of God",
             "Diego Maradona",
             "The Legend of Maradona"
           ],
-          "correctAnswerIndex": 2,
+          "answer": 2,
           "points": 50
         },
         {
           "question": "What controversial substance was Maradona suspended for during the 1994 World Cup?",
-          "answers": ["Cocaine", "Ephedrine", "Steroids", "Marijuana"],
-          "correctAnswerIndex": 1,
+          "options": ["Cocaine", "Ephedrine", "Steroids", "Marijuana"],
+          "answer": 1,
           "points": 50
         }
       ]
@@ -717,112 +717,112 @@
       "questions": [
         {
           "question": "What country does Neymar Jr. represent?",
-          "answers": ["Argentina", "Brazil", "Portugal", "Spain"],
-          "correctAnswerIndex": 1,
+          "options": ["Argentina", "Brazil", "Portugal", "Spain"],
+          "answer": 1,
           "points": 10
         },
         {
           "question": "Which club did Neymar join in 2013?",
-          "answers": ["Real Madrid", "Barcelona", "PSG", "Manchester United"],
-          "correctAnswerIndex": 1,
+          "options": ["Real Madrid", "Barcelona", "PSG", "Manchester United"],
+          "answer": 1,
           "points": 10
         },
         {
           "question": "What is Neymar's preferred playing position?",
-          "answers": ["Defender", "Midfielder", "Forward", "Goalkeeper"],
-          "correctAnswerIndex": 2,
+          "options": ["Defender", "Midfielder", "Forward", "Goalkeeper"],
+          "answer": 2,
           "points": 10
         },
         {
           "question": "In which year did Neymar win the UEFA Champions League with Barcelona?",
-          "answers": ["2013", "2014", "2015", "2016"],
-          "correctAnswerIndex": 2,
+          "options": ["2013", "2014", "2015", "2016"],
+          "answer": 2,
           "points": 20
         },
         {
           "question": "What number jersey does Neymar commonly wear for PSG?",
-          "answers": ["7", "10", "11", "9"],
-          "correctAnswerIndex": 1,
+          "options": ["7", "10", "11", "9"],
+          "answer": 1,
           "points": 20
         },
         {
           "question": "Which Brazilian club did Neymar start his professional career at?",
-          "answers": ["Corinthians", "Flamengo", "Santos", "Palmeiras"],
-          "correctAnswerIndex": 2,
+          "options": ["Corinthians", "Flamengo", "Santos", "Palmeiras"],
+          "answer": 2,
           "points": 20
         },
         {
           "question": "In which year did Neymar make his debut for the Brazilian national team?",
-          "answers": ["2009", "2010", "2011", "2012"],
-          "correctAnswerIndex": 1,
+          "options": ["2009", "2010", "2011", "2012"],
+          "answer": 1,
           "points": 30
         },
         {
           "question": "Which Olympics did Neymar win a gold medal in football?",
-          "answers": [
+          "options": [
             "2012 London",
             "2016 Rio de Janeiro",
             "2020 Tokyo",
             "2014 Sochi"
           ],
-          "correctAnswerIndex": 1,
+          "answer": 1,
           "points": 30
         },
         {
           "question": "Which team did Neymar score his first goal for PSG against?",
-          "answers": ["Guingamp", "Marseille", "Lyon", "Monaco"],
-          "correctAnswerIndex": 0,
+          "options": ["Guingamp", "Marseille", "Lyon", "Monaco"],
+          "answer": 0,
           "points": 30
         },
         {
           "question": "Which year did Neymar become the world's most expensive player?",
-          "answers": ["2016", "2017", "2018", "2019"],
-          "correctAnswerIndex": 1,
+          "options": ["2016", "2017", "2018", "2019"],
+          "answer": 1,
           "points": 40
         },
         {
           "question": "Against which team did Neymar score his first hat-trick for Barcelona?",
-          "answers": ["Real Madrid", "Celtic", "Atletico Madrid", "Sevilla"],
-          "correctAnswerIndex": 1,
+          "options": ["Real Madrid", "Celtic", "Atletico Madrid", "Sevilla"],
+          "answer": 1,
           "points": 40
         },
         {
           "question": "Which tournament did Neymar win with Brazil in 2013?",
-          "answers": [
+          "options": [
             "FIFA World Cup",
             "Copa America",
             "FIFA Confederations Cup",
             "Olympic Games"
           ],
-          "correctAnswerIndex": 2,
+          "answer": 2,
           "points": 40
         },
         {
           "question": "Which award did Neymar win at the 2011 FIFA Puskás Award?",
-          "answers": [
+          "options": [
             "Best Player",
             "Best Young Player",
             "Best Goal",
             "Fair Play Award"
           ],
-          "correctAnswerIndex": 2,
+          "answer": 2,
           "points": 50
         },
         {
           "question": "What is Neymar's full name?",
-          "answers": [
+          "options": [
             "Neymar Silva Santos Junior",
             "Neymar Silva Junior",
             "Neymar Santos Junior",
             "Neymar da Silva Santos Junior"
           ],
-          "correctAnswerIndex": 3,
+          "answer": 3,
           "points": 50
         },
         {
           "question": "Which team did Neymar help Brazil beat in the 2016 Olympics final?",
-          "answers": ["Germany", "Argentina", "Spain", "Mexico"],
-          "correctAnswerIndex": 0,
+          "options": ["Germany", "Argentina", "Spain", "Mexico"],
+          "answer": 0,
           "points": 50
         }
       ]
@@ -833,117 +833,117 @@
       "questions": [
         {
           "question": "What country does Kevin De Bruyne represent?",
-          "answers": ["Belgium", "Germany", "Netherlands", "France"],
-          "correctAnswerIndex": 0,
+          "options": ["Belgium", "Germany", "Netherlands", "France"],
+          "answer": 0,
           "points": 1
         },
         {
           "question": "Which Premier League club did Kevin De Bruyne join in 2015?",
-          "answers": [
+          "options": [
             "Chelsea",
             "Manchester United",
             "Liverpool",
             "Manchester City"
           ],
-          "correctAnswerIndex": 3,
+          "answer": 3,
           "points": 2
         },
         {
           "question": "What position does Kevin De Bruyne primarily play?",
-          "answers": ["Defender", "Midfielder", "Forward", "Goalkeeper"],
-          "correctAnswerIndex": 1,
+          "options": ["Defender", "Midfielder", "Forward", "Goalkeeper"],
+          "answer": 1,
           "points": 3
         },
         {
           "question": "Which German club did Kevin De Bruyne play for before joining Manchester City?",
-          "answers": [
+          "options": [
             "Bayern Munich",
             "Borussia Dortmund",
             "Wolfsburg",
             "RB Leipzig"
           ],
-          "correctAnswerIndex": 2,
+          "answer": 2,
           "points": 4
         },
         {
           "question": "In which year did Kevin De Bruyne win his first Premier League title with Manchester City?",
-          "answers": ["2016", "2017", "2018", "2019"],
-          "correctAnswerIndex": 2,
+          "options": ["2016", "2017", "2018", "2019"],
+          "answer": 2,
           "points": 5
         },
         {
           "question": "Which club did Kevin De Bruyne start his professional career with?",
-          "answers": ["Genk", "Anderlecht", "Standard Liège", "Club Brugge"],
-          "correctAnswerIndex": 0,
+          "options": ["Genk", "Anderlecht", "Standard Liège", "Club Brugge"],
+          "answer": 0,
           "points": 6
         },
         {
           "question": "In which World Cup did Kevin De Bruyne help Belgium reach the semifinals?",
-          "answers": ["2010", "2014", "2018", "2022"],
-          "correctAnswerIndex": 2,
+          "options": ["2010", "2014", "2018", "2022"],
+          "answer": 2,
           "points": 7
         },
         {
           "question": "Which award did Kevin De Bruyne win for being the Premier League's best player in 2020?",
-          "answers": [
+          "options": [
             "PFA Player of the Year",
             "Ballon d'Or",
             "Golden Boot",
             "FIFA Best Player"
           ],
-          "correctAnswerIndex": 0,
+          "answer": 0,
           "points": 8
         },
         {
           "question": "Against which team did Kevin De Bruyne score a hat-trick for Manchester City in 2022?",
-          "answers": ["Chelsea", "Manchester United", "Wolves", "Arsenal"],
-          "correctAnswerIndex": 2,
+          "options": ["Chelsea", "Manchester United", "Wolves", "Arsenal"],
+          "answer": 2,
           "points": 9
         },
         {
           "question": "Which manager brought Kevin De Bruyne to Manchester City?",
-          "answers": [
+          "options": [
             "Manuel Pellegrini",
             "Pep Guardiola",
             "Roberto Mancini",
             "Jose Mourinho"
           ],
-          "correctAnswerIndex": 0,
+          "answer": 0,
           "points": 40
         },
         {
           "question": "What is Kevin De Bruyne's preferred foot?",
-          "answers": ["Right", "Left", "Both", "Neither"],
-          "correctAnswerIndex": 0,
+          "options": ["Right", "Left", "Both", "Neither"],
+          "answer": 0,
           "points": 40
         },
         {
           "question": "Which year did Kevin De Bruyne win his first EFL Cup with Manchester City?",
-          "answers": ["2015", "2016", "2017", "2018"],
-          "correctAnswerIndex": 2,
+          "options": ["2015", "2016", "2017", "2018"],
+          "answer": 2,
           "points": 40
         },
         {
           "question": "Which youth academy did Kevin De Bruyne join at the age of 14?",
-          "answers": ["Genk", "Gent", "Anderlecht", "Standard Liège"],
-          "correctAnswerIndex": 1,
+          "options": ["Genk", "Gent", "Anderlecht", "Standard Liège"],
+          "answer": 1,
           "points": 50
         },
         {
           "question": "Which Belgian teammate does Kevin De Bruyne often link up with on the national team?",
-          "answers": [
+          "options": [
             "Romelu Lukaku",
             "Eden Hazard",
             "Dries Mertens",
             "Thibaut Courtois"
           ],
-          "correctAnswerIndex": 1,
+          "answer": 1,
           "points": 50
         },
         {
           "question": "Which year did Kevin De Bruyne sign his first professional contract with Genk?",
-          "answers": ["2008", "2009", "2010", "2011"],
-          "correctAnswerIndex": 0,
+          "options": ["2008", "2009", "2010", "2011"],
+          "answer": 0,
           "points": 50
         }
       ]

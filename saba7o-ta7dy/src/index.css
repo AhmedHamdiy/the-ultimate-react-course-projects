@@ -1,15 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Graduate&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=SUSE&display=swap");
 
 :root {
   --color-darkest: #343a40;
   --color-dark: #495057;
   --color-medium: #ced4da;
   --color-light: #f1f3f5;
+  --error: #495057;
 
   --color-theme-light: #65c851;
   --color-theme: #4e9f3d;
   --color-theme-dark: #306326;
   --color-accent: #ffa94d;
+  --color-red: #9e0d0d;
+  --color-red-border: #740808;
 }
 
 * {
@@ -20,14 +24,13 @@
 
 html {
   font-size: 62.5%;
-  font-family: "Roboto", serif;
+  font-family: "SUSE", sans-serif;
 }
 
 body {
-  min-height: 100vh;
+  height: 100vh;
   color: var(--color-light);
   background-color: var(--color-medium);
-  padding: 3.2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,8 +40,9 @@ body {
 #root {
   display: flex;
   justify-content: start;
-  align-items: center;
   flex-direction: column;
+  height: 100%;
+  padding: 2rem;
 }
 .app-header {
   font-family: "Graduate", serif;
@@ -53,23 +57,25 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   border-radius: 2rem;
+}
+.app-header h1 {
+  font-size: 4.2rem;
 }
 .main {
   width: 100rem;
   background-color: var(--color-dark);
-  height: 55rem;
-  padding: 0rem;
+  height: 60rem;
+  padding: 4rem 10%;
   border-radius: 2rem;
 }
 
 .error {
   text-align: center;
-  font-size: 1.6rem;
+  font-size: 3.6rem;
   font-weight: 500;
   padding: 2rem;
-  background-color: #495057;
   border-radius: 100px;
 }
 
@@ -80,24 +86,24 @@ h1 {
   font-size: 5.6rem;
 }
 
-h1 h2 {
+h2 {
   font-size: 3.6rem;
   margin-bottom: 2rem;
 }
 .screen {
-  padding: 2rem;
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
   gap: 3rem;
   width: 100%;
   height: 100%;
 }
 
-.start-screen {
-  justify-content: center;
+.start-screen,
+.players-screen {
+  align-items: center;
 }
+
 .start-screen h2 {
   font-size: 5rem;
 }
@@ -105,7 +111,6 @@ h1 h2 {
   font-size: 3rem;
   color: var(--color-medium);
 }
-
 .players-list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -153,9 +158,51 @@ h4 {
   flex-direction: column;
   align-items: center;
 }
+.error-screen {
+  text-align: center;
+}
+
+.footer {
+  position: relative;
+  width: 90%;
+  margin-top: 1rem;
+}
+.footer * {
+  bottom: calc(50% - 2.6rem);
+  padding: 1.35rem 2.8rem;
+  font-size: 1.8rem;
+  border-radius: 2rem;
+  position: absolute;
+  border: 0.2rem solid;
+}
+.step-btn {
+  cursor: pointer;
+  color: var(--color-light);
+  background-color: var(--color-theme-light);
+  border-color: var(--color-theme-dark);
+}
+.previous-btn {
+  left: -8rem;
+}
+.next-btn,
+.finish-btn {
+  right: -8rem;
+}
+
+.disable {
+  opacity: 0.2;
+}
+.timer {
+  width: 8rem;
+  padding: 1rem;
+  text-align: center;
+  right: calc(50% - 8rem);
+  border-color: var(--color-dark);
+  background-color: var(--color-darkest);
+  color: var(--color-medium);
+}
 
 .progress {
-  margin-bottom: 4rem;
   display: grid;
   justify-content: space-between;
   gap: 1.2rem;
@@ -163,7 +210,6 @@ h4 {
   font-size: 1.8rem;
   color: var(--color-medium);
 }
-
 progress {
   -webkit-appearance: none;
   width: 100%;
@@ -197,44 +243,95 @@ progress {
   background-color: var(--color-theme-dark);
   opacity: 0.9;
 }
-
-.btn-option:not([disabled]):hover {
-  transform: translateX(1.2rem);
-}
-
 .btn[disabled]:hover {
   cursor: not-allowed;
 }
-
-.btn-ui {
-  float: right;
+.question {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
 }
-
+.question-header {
+  padding: 0;
+  margin: 0;
+}
+.question h2 {
+  font-size: 3rem;
+}
 .options {
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
   margin-bottom: 3.2rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.btn-option {
+.option {
   width: 100%;
   text-align: left;
+  background-color: var(--color-dark);
+  border: 0.2rem solid var(--color-darkest);
+  padding: 2rem;
+  border-radius: 2rem;
+  cursor: pointer;
 }
 
-.btn-option.correct {
-  background-color: var(--color-theme);
-  border: 2px solid var(--color-theme);
-  color: var(--color-light);
-}
-.btn-option.wrong {
-  background-color: var(--color-accent);
-  border: 2px solid var(--color-accent);
-  color: var(--color-darkest);
+.option:not([disabled]):hover {
+  transform: translateX(1.2rem);
 }
 
-.answer {
-  transform: translateX(2rem);
+.option p {
+  font-size: 1.8rem;
+}
+
+.correct-answer {
+  background-color: var(--color-theme-light);
+  border: 1px solid var(--color-theme-dark);
+  animation: correct 2s linear;
+}
+
+@keyframes correct {
+  20% {
+    opacity: 0.2;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.wrong-answer {
+  background-color: var(--color-red);
+  border: 1px solid var(--color-red-border);
+  animation: wrong 2s linear;
+}
+
+@keyframes wrong {
+  20% {
+    opacity: 0.2;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .result {
@@ -266,15 +363,6 @@ progress {
   gap: 1.6rem;
   color: var(--color-medium);
   font-size: 5rem;
-}
-
-.timer {
-  float: left;
-  font-size: 1.8rem;
-  color: var(--color-medium);
-  border: 2px solid var(--color-dark);
-  padding: 1.35rem 2.8rem;
-  border-radius: 100px;
 }
 
 /* CREDIT: https://dev.to/afif/i-made-100-css-loaders-for-your-next-project-4eje */
