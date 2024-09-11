@@ -18,3 +18,6 @@ A repository for my versions of the projects from Jonas's Ultimate React Course
 
 # Omap
 ![Screenshot from 2024-09-11 03-13-41](https://github.com/user-attachments/assets/15733269-bc99-4d9e-8b33-7fbaedafbbe8)
+
+# React Bank
+![Screenshot from 2024-09-11 23-54-51](https://github.com/user-attachments/assets/be92d762-1208-4a38-a8b2-ef648ea41a1d)
