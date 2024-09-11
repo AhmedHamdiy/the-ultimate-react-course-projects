@@ -1,0 +1,184 @@
+{
+  "cities": [
+    {
+      "id": "abe8",
+      "cityName": "Cairo",
+      "country": "Egypt",
+      "emoji": "🇪🇬",
+      "date": "2024-09-11T00:04:20.406Z",
+      "notes": "",
+      "position": {
+        "lat": "30.01627823797697",
+        "lng": "31.245117187500004"
+      }
+    },
+    {
+      "id": "c835",
+      "cityName": "Marsa Maţruḩ",
+      "country": "Egypt",
+      "emoji": "🇪🇬",
+      "date": "2024-09-11T00:04:24.504Z",
+      "notes": "",
+      "position": {
+        "lat": "29.901678376148137",
+        "lng": "26.411132812500004"
+      }
+    },
+    {
+      "id": "4e0f",
+      "cityName": "Kafr ash Shaykh",
+      "country": "Egypt",
+      "emoji": "🇪🇬",
+      "date": "2024-09-11T00:04:27.572Z",
+      "notes": "",
+      "position": {
+        "lat": "31.394062996889943",
+        "lng": "30.563964843750004"
+      }
+    },
+    {
+      "id": "c888",
+      "cityName": "Alexandria",
+      "country": "Egypt",
+      "emoji": "🇪🇬",
+      "date": "2024-09-11T00:04:33.583Z",
+      "notes": "",
+      "position": {
+        "lat": "31.056889711122707",
+        "lng": "29.838867187500004"
+      }
+    },
+    {
+      "id": "1186",
+      "cityName": "Kafr Sa‘d",
+      "country": "Egypt",
+      "emoji": "🇪🇬",
+      "date": "2024-09-11T00:04:36.328Z",
+      "notes": "",
+      "position": {
+        "lat": "31.37596755612659",
+        "lng": "31.684570312500004"
+      }
+    },
+    {
+      "id": "c14c",
+      "cityName": "Lake Manzala",
+      "country": "Egypt",
+      "emoji": "🇪🇬",
+      "date": "2024-09-11T00:04:39.143Z",
+      "notes": "",
+      "position": {
+        "lat": "31.301123828832754",
+        "lng": "31.970214843750004"
+      }
+    },
+    {
+      "id": "0a61",
+      "cityName": "Port Said",
+      "country": "Egypt",
+      "emoji": "🇪🇬",
+      "date": "2024-09-11T00:04:41.819Z",
+      "notes": "",
+      "position": {
+        "lat": "31.225995892430674",
+        "lng": "32.27783203125001"
+      }
+    },
+    {
+      "id": "e41b",
+      "cityName": "Ma'an",
+      "country": "Jordan",
+      "emoji": "🇯🇴",
+      "date": "2024-09-11T00:07:18.368Z",
+      "notes": "",
+      "position": {
+        "lat": "30.963082311269343",
+        "lng": "36.63659250507829"
+      }
+    },
+    {
+      "id": "0ec9",
+      "cityName": "Pastrana",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2024-09-11T00:09:06.544Z",
+      "notes": "",
+      "position": {
+        "lat": "40.450032436555205",
+        "lng": "-2.9214260732633224"
+      }
+    },
+    {
+      "id": "eb5b",
+      "cityName": "Aire-sur-l'Adour",
+      "country": "France",
+      "emoji": "🇫🇷",
+      "date": "2024-09-11T00:09:09.384Z",
+      "notes": "",
+      "position": {
+        "lat": "43.69308321676488",
+        "lng": "-0.2781208338013675"
+      }
+    },
+    {
+      "id": "f92f",
+      "cityName": "Heppenheim an der Bergstrasse",
+      "country": "Germany",
+      "emoji": "🇩🇪",
+      "date": "2024-09-11T00:09:12.191Z",
+      "notes": "",
+      "position": {
+        "lat": "49.61036937676899",
+        "lng": "8.672221890286883"
+      }
+    },
+    {
+      "id": "9acd",
+      "cityName": "Grindelwald",
+      "country": "Switzerland",
+      "emoji": "🇨🇭",
+      "date": "2024-09-11T00:09:14.122Z",
+      "notes": "",
+      "position": {
+        "lat": "46.62403101014407",
+        "lng": "7.97964081581041"
+      }
+    },
+    {
+      "id": "5fbd",
+      "cityName": "Piozzano",
+      "country": "Italy",
+      "emoji": "🇮🇹",
+      "date": "2024-09-11T00:09:15.919Z",
+      "notes": "",
+      "position": {
+        "lat": "44.906681664363106",
+        "lng": "9.45438610652378"
+      }
+    },
+    {
+      "id": "4ed4",
+      "cityName": "Glamoc",
+      "country": "Bosnia and Herzegovina",
+      "emoji": "🇧🇦",
+      "date": "2024-09-11T00:09:18.640Z",
+      "notes": "",
+      "position": {
+        "lat": "44.279368020552276",
+        "lng": "16.68484789186419"
+      }
+    },
+    {
+      "id": "45d1",
+      "cityName": "Barilovic",
+      "country": "Croatia",
+      "emoji": "🇭🇷",
+      "date": "2024-09-11T00:09:20.622Z",
+      "notes": "",
+      "position": {
+        "lat": "45.30831087031247",
+        "lng": "15.42772044568078"
+      }
+    }
+  ]
+}
