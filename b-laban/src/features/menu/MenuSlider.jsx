@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { getSliderImages } from '../../services/apiRestaurant';
-import { useLoaderData } from 'react-router';
+import { useLoaderData, useNavigation } from 'react-router';
 import Button from '../../ui/Button';
 
 function MenuSlider() {
@@ -11,7 +11,6 @@ function MenuSlider() {
         const interval = setInterval(() => {
             setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
         }, 2000);
-        console.log(images[currentIndex]);
         return () => clearInterval(interval);
     }, [images.length, images, currentIndex]);
 
@@ -26,7 +25,6 @@ function MenuSlider() {
             prevIndex === 0 ? images.length - 1 : prevIndex - 1
         );
     };
-
     return (
         <div className="relative w-full max-w-4xl mx-auto overflow-hidden my-4">
             <Button type="left" onClick={nextSlide}>
@@ -50,7 +48,7 @@ function MenuSlider() {
                     </div>
                 ))}
             </div>
-            <Button type="right" onClick={nextSlide}>
+            <Button type="right" onClick={prevSlide}>
                 &#10094;
             </Button>
         </div>

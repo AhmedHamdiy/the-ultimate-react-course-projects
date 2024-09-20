@@ -1,5 +1,21 @@
-function UpdateOrder() {
-  return <div>update order</div>;
+import { useFetcher } from 'react-router-dom';
+import Button from '../../ui/Button';
+import { updateOrder } from '../../services/apiRestaurant';
+
+function UpdateOrder({ order }) {
+    const fetcher = useFetcher();
+
+    return (
+        <fetcher.Form method="PATCH" className="text-right">
+            <Button type="primary">طلب مستعجل</Button>
+        </fetcher.Form>
+    );
 }
 
 export default UpdateOrder;
+
+export async function action({ request, params }) {
+    const data = { hasPriority: true };
+    await updateOrder(params.orderId, data);
+    return null;
+}

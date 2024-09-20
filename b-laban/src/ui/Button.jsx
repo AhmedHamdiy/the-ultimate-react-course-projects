@@ -6,7 +6,7 @@ function Button({ children, disabled, type, to, onClick }) {
 
     const styles = {
         primary: base + ' px-4 py-3 md:px-6 md:py-4',
-        small: base + ' px-4 py-2 md:px-5 md:py-2.5 text-xs',
+        small: base + ' px-4 py-2 md:px-5 md:py-2.5 text-xs rounded-full ',
         round: base + ' px-2.5 py-1 md:px-3.5 md:py-2 text-sm',
         left: 'z-50 absolute top-1/2 left-4 -translate-y-1/2 bg-blue-600 text-white rounded-full p-2 hover:bg-blue-700 focus:outline-none',
         secondary:

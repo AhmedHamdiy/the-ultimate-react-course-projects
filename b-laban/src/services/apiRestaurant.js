@@ -47,32 +47,48 @@ export async function getCategoryItems(categoryId) {
 export async function getOrder(orderId) {
     const { data, error } = await supabase
         .from('order')
-        .select(`*, order_item(*)`)
+        .select(
+            `
+    id,
+    deliveryDate,
+    hasPriority,
+    order_item (
+        id,
+      quantity,
+      menu_item ( unitPrice , name )
+    )
+  `
+        )
         .eq('id', orderId);
 
     if (error) {
         console.error('Error fetching data:', error);
-        throw new Error('there was an error fetching menu categories');
+        throw new Error('there was an error fetching order data');
     }
-    return data;
+    return data[0];
 }
+
 export async function createOrder(newOrder) {
-    const { items, ...orderData } = newOrder;
+    const { hasPriority, cart } = newOrder;
+    const time = new Date();
+    const additionalMinutes = hasPriority ? 20 : 45;
+    time.setMinutes(time.getMinutes() + additionalMinutes);
+    const unixSeconds = Math.floor(time.getTime() / 1000);
+    const deliveryDate = new Date(unixSeconds * 1000).toISOString();
     const { data: order, error: orderError } = await supabase
         .from('order')
-        .insert([orderData])
+        .insert([{ deliveryDate, hasPriority }])
         .select('id');
-
     if (orderError) {
-        console.error('Error inserting order:', orderError);
+        console.error('Error creating order:', orderError);
         return null;
     }
 
     const orderId = order[0].id;
-
-    const orderItems = items.map((item) => ({
-        ...item,
-        orderId: orderId,
+    const orderItems = cart.map((item) => ({
+        orderId,
+        menuItemId: item.menuItemId,
+        quantity: item.quantity,
     }));
 
     const { data: orderItemsData, error: orderItemsError } = await supabase
@@ -83,7 +99,6 @@ export async function createOrder(newOrder) {
         console.error('Error inserting order items:', orderItemsError);
         return null;
     }
-
     return {
         orderId,
         orderItems: orderItemsData,
@@ -91,11 +106,9 @@ export async function createOrder(newOrder) {
 }
 
 export async function updateOrder(id, updateOrder) {
-    const { items, ...orderData } = updateOrder;
-
     const { data, error } = await supabase
         .from('order')
-        .update(orderData)
+        .update(updateOrder)
         .eq('id', id);
 
     if (error) {
@@ -103,6 +116,5 @@ export async function updateOrder(id, updateOrder) {
         return null;
     }
 
-    console.log('Updated order:', data);
     return data;
 }
