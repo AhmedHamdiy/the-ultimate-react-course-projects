@@ -1,5 +1,5 @@
 function Booking() {
-  return <div></div>;
+  return <div>booking</div>;
 }
 
 export default Booking;

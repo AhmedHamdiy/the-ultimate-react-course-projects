@@ -1,5 +1,5 @@
 function uploader() {
-  return <div></div>;
+  return <div>uploader</div>;
 }
 
 export default uploader;
